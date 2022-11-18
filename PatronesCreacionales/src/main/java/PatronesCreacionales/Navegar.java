@@ -13,6 +13,6 @@ import java.util.ArrayList;
  */
 public interface Navegar {
     
-    //Se debe llamar a un objeto de tipo creador para poder mostar la consulta que quiere hacer el cliente luego de 
+    //Se debe llamar a un objeto de tipo creador para poder mostar la consulta que quiere hacer el cliente mostrandole el consultarProducto
     public ArrayList<Producto> consultarProducto();
 }
