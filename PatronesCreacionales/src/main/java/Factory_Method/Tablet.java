@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Productos;
+package Factory_Method;
 
 import java.util.ArrayList;
 
@@ -10,32 +10,30 @@ import java.util.ArrayList;
  *
  * @author Jorge Daniel
  */
-public class Laptop implements Producto{
-    
+public class Tablet implements Producto{
+
     private String marca;
     private String modelo;
+    private boolean soportaSim;
     private String SO;
     private int cantidadRam;
     private int Almacenamiento;
     private String tecnologíaPantalla;
     private String diagonalPantalla;
-    private String tarjetaGráfica;
     private ArrayList<String> fallas;
 
-    public Laptop(String marca, String modelo, String SO, int cantidadRam, int Almacenamiento, String tecnologíaPantalla, String diagonalPantalla, String tarjetaGráfica, ArrayList<String> fallas) {
+    public Tablet(String marca, String modelo, boolean soportaSim, String SO, int cantidadRam, int Almacenamiento, String tecnologíaPantalla, String diagonalPantalla, ArrayList<String> fallas) {
         this.marca = marca;
         this.modelo = modelo;
+        this.soportaSim = soportaSim;
         this.SO = SO;
         this.cantidadRam = cantidadRam;
         this.Almacenamiento = Almacenamiento;
         this.tecnologíaPantalla = tecnologíaPantalla;
         this.diagonalPantalla = diagonalPantalla;
-        this.tarjetaGráfica = tarjetaGráfica;
         this.fallas = fallas;
     }
 
-    
-    
     public String getMarca() {
         return marca;
     }
@@ -50,6 +48,14 @@ public class Laptop implements Producto{
 
     public void setModelo(String modelo) {
         this.modelo = modelo;
+    }
+
+    public boolean isSoportaSim() {
+        return soportaSim;
+    }
+
+    public void setSoportaSim(boolean soportaSim) {
+        this.soportaSim = soportaSim;
     }
 
     public String getSO() {
@@ -90,14 +96,6 @@ public class Laptop implements Producto{
 
     public void setDiagonalPantalla(String diagonalPantalla) {
         this.diagonalPantalla = diagonalPantalla;
-    }
-
-    public String getTarjetaGráfica() {
-        return tarjetaGráfica;
-    }
-
-    public void setTarjetaGráfica(String tarjetaGráfica) {
-        this.tarjetaGráfica = tarjetaGráfica;
     }
 
     public ArrayList<String> getFallas() {

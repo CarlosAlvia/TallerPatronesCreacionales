@@ -4,7 +4,7 @@
  */
 package PatronesCreacionales;
 
-import Productos.Producto;
+import Factory_Method.Producto;
 
 /**
  *

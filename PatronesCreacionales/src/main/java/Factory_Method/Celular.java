@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Productos;
+package Factory_Method;
 
 import java.util.ArrayList;
 
@@ -10,25 +10,26 @@ import java.util.ArrayList;
  *
  * @author Jorge Daniel
  */
-public class Tablet implements Producto{
-
+public class Celular implements Producto{
     private String marca;
     private String modelo;
-    private boolean soportaSim;
+    private int cantidadSims;
     private String SO;
     private int cantidadRam;
     private int Almacenamiento;
+    private boolean tieneRadio;
     private String tecnologíaPantalla;
     private String diagonalPantalla;
     private ArrayList<String> fallas;
 
-    public Tablet(String marca, String modelo, boolean soportaSim, String SO, int cantidadRam, int Almacenamiento, String tecnologíaPantalla, String diagonalPantalla, ArrayList<String> fallas) {
+    public Celular(String marca, String modelo, int cantidadSims, String SO, int cantidadRam, int Almacenamiento, boolean tieneRadio, String tecnologíaPantalla, String diagonalPantalla, ArrayList<String> fallas) {
         this.marca = marca;
         this.modelo = modelo;
-        this.soportaSim = soportaSim;
+        this.cantidadSims = cantidadSims;
         this.SO = SO;
         this.cantidadRam = cantidadRam;
         this.Almacenamiento = Almacenamiento;
+        this.tieneRadio = tieneRadio;
         this.tecnologíaPantalla = tecnologíaPantalla;
         this.diagonalPantalla = diagonalPantalla;
         this.fallas = fallas;
@@ -50,12 +51,12 @@ public class Tablet implements Producto{
         this.modelo = modelo;
     }
 
-    public boolean isSoportaSim() {
-        return soportaSim;
+    public int getCantidadSims() {
+        return cantidadSims;
     }
 
-    public void setSoportaSim(boolean soportaSim) {
-        this.soportaSim = soportaSim;
+    public void setCantidadSims(int cantidadSims) {
+        this.cantidadSims = cantidadSims;
     }
 
     public String getSO() {
@@ -80,6 +81,14 @@ public class Tablet implements Producto{
 
     public void setAlmacenamiento(int Almacenamiento) {
         this.Almacenamiento = Almacenamiento;
+    }
+
+    public boolean isTieneRadio() {
+        return tieneRadio;
+    }
+
+    public void setTieneRadio(boolean tieneRadio) {
+        this.tieneRadio = tieneRadio;
     }
 
     public String getTecnologíaPantalla() {

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Productos;
+package Factory_Method;
 
 import java.util.ArrayList;
 
@@ -10,31 +10,32 @@ import java.util.ArrayList;
  *
  * @author Jorge Daniel
  */
-public class Celular implements Producto{
+public class Laptop implements Producto{
+    
     private String marca;
     private String modelo;
-    private int cantidadSims;
     private String SO;
     private int cantidadRam;
     private int Almacenamiento;
-    private boolean tieneRadio;
     private String tecnologíaPantalla;
     private String diagonalPantalla;
+    private String tarjetaGráfica;
     private ArrayList<String> fallas;
 
-    public Celular(String marca, String modelo, int cantidadSims, String SO, int cantidadRam, int Almacenamiento, boolean tieneRadio, String tecnologíaPantalla, String diagonalPantalla, ArrayList<String> fallas) {
+    public Laptop(String marca, String modelo, String SO, int cantidadRam, int Almacenamiento, String tecnologíaPantalla, String diagonalPantalla, String tarjetaGráfica, ArrayList<String> fallas) {
         this.marca = marca;
         this.modelo = modelo;
-        this.cantidadSims = cantidadSims;
         this.SO = SO;
         this.cantidadRam = cantidadRam;
         this.Almacenamiento = Almacenamiento;
-        this.tieneRadio = tieneRadio;
         this.tecnologíaPantalla = tecnologíaPantalla;
         this.diagonalPantalla = diagonalPantalla;
+        this.tarjetaGráfica = tarjetaGráfica;
         this.fallas = fallas;
     }
 
+    
+    
     public String getMarca() {
         return marca;
     }
@@ -49,14 +50,6 @@ public class Celular implements Producto{
 
     public void setModelo(String modelo) {
         this.modelo = modelo;
-    }
-
-    public int getCantidadSims() {
-        return cantidadSims;
-    }
-
-    public void setCantidadSims(int cantidadSims) {
-        this.cantidadSims = cantidadSims;
     }
 
     public String getSO() {
@@ -83,14 +76,6 @@ public class Celular implements Producto{
         this.Almacenamiento = Almacenamiento;
     }
 
-    public boolean isTieneRadio() {
-        return tieneRadio;
-    }
-
-    public void setTieneRadio(boolean tieneRadio) {
-        this.tieneRadio = tieneRadio;
-    }
-
     public String getTecnologíaPantalla() {
         return tecnologíaPantalla;
     }
@@ -105,6 +90,14 @@ public class Celular implements Producto{
 
     public void setDiagonalPantalla(String diagonalPantalla) {
         this.diagonalPantalla = diagonalPantalla;
+    }
+
+    public String getTarjetaGráfica() {
+        return tarjetaGráfica;
+    }
+
+    public void setTarjetaGráfica(String tarjetaGráfica) {
+        this.tarjetaGráfica = tarjetaGráfica;
     }
 
     public ArrayList<String> getFallas() {
