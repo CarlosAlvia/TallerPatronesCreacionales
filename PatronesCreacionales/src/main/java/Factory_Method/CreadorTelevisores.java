@@ -13,7 +13,7 @@ import Factory_Method.Producto;
 public class CreadorTelevisores extends Creador{
 
     @Override
-    public Producto crearProducto() {
+    public Producto crearProducto(String query) {
         return null;
     }
     

@@ -13,7 +13,7 @@ import Factory_Method.Producto;
 public class CreadorTablets extends Creador{
 
     @Override
-    public Producto crearProducto() {
+    public Producto crearProducto(String query) {
         return null;
     }
     

@@ -5,11 +5,14 @@
 package PatronesCreacionales;
 
 import Factory_Method.Producto;
+import java.util.ArrayList;
 
 /**
  *
  * @author Jorge Daniel
  */
 public interface Navegar {
-    public Producto consultarProducto();
+    
+    //Se debe llamar a un objeto de tipo creador para poder mostar la consulta que quiere hacer el cliente luego de 
+    public ArrayList<Producto> consultarProducto();
 }

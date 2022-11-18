@@ -5,6 +5,7 @@
 package PatronesCreacionales;
 
 import Factory_Method.Producto;
+import java.util.ArrayList;
 
 /**
  *
@@ -26,7 +27,7 @@ public class Mantenimiento implements Navegar{
         this.nombre = nombre;
     }
     
-    public Producto consultarProducto(){
+    public ArrayList<Producto> consultarProducto(){
         return null;
     }
     

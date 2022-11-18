@@ -12,5 +12,7 @@ import Factory_Method.Producto;
  */
 public abstract class Creador {
     
-    public abstract Producto crearProducto();
+    //En este método independientemente de cual sea la implementación de las clases hijas, se deben solicitar los datos de la base de datos.
+    public abstract Producto crearProducto(String query);
+    
 }
