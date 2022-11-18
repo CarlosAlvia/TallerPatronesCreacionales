@@ -7,7 +7,7 @@ package PatronesCreacionales;
 import java.util.List;
 
 
-public class televisor {
+public class televisor implements producto {
     
     private String marca;
     private String modelo;
